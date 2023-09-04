@@ -11,9 +11,8 @@ displayName = "Development database"
 url = "jdbc:sqlserver://localhost;databaseName=WidgetZShadow;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
 displayName = "Shadow"
 
-[environments.production]
+[environments.Prod]
 url = "jdbc:sqlserver://localhost;databaseName=WidgetProd;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
-schemas = [ ]
 displayName = "Production"
 
 [flyway]
@@ -33,8 +32,9 @@ schemaModel = "./schema-model"
   [flywayDesktop.generate]
   undoScripts = true
 
-[redgateCompare.sqlserver]
-filterFile = "Filter.scpf"
+[redgateCompare]
+  [redgateCompare.sqlserver]
+  filterFile = "Filter.scpf"
 
 [redgateCompare.sqlserver.options.behavior]
 addCreateOrAlterForRerunnableScripts = false
@@ -125,3 +125,11 @@ dropPrimaryKeysIndexesAndUniqueConstraints = false
 reseedIdentityColumns = false
 skipIntegrityChecksForForeignKeys = false
 transportClrDataTypesAsBinary = false
+
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "WidgetPrices"
+
+  [[redgateCompare.staticDataTables]]
+  schema = "dbo"
+  table = "AddressBook"

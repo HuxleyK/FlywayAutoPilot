@@ -182,6 +182,292 @@
       "operation": "info",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Baseline",
+          "version": "001.20230703120714",
+          "rawVersion": "001_20230703120714",
+          "description": "baseline",
+          "type": "SQL_BASELINE",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\B001_20230703120714__baseline.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "002.20230703112421",
+          "rawVersion": "002_20230703112421",
+          "description": "Huxley Kendell",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V002_20230703112421__Huxley_Kendell.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U002_20230703112421__UNDO-Huxley_Kendell.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "003.20230712152932",
+          "rawVersion": "003_20230712152932",
+          "description": "NewProc-dbo-GetAllWidgets",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V003_20230712152932__NewProc-dbo-GetAllWidgets.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U003_20230712152932__UNDO-NewProc-dbo-GetAllWidgets.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "004.20230718170924",
+          "rawVersion": "004_20230718170924",
+          "description": "NewStatesTable",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V004_20230718170924__NewStatesTable.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U004_20230718170924__UNDO-NewStatesTable.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "005.20230801210409",
+          "rawVersion": "005_20230801210409",
+          "description": "stephanie herr",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V005_20230801210409__stephanie_herr.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U005_20230801210409__UNDO-stephanie_herr.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "006.20230904122007",
+          "rawVersion": "006_20230904122007",
+          "description": "redgate",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V006_20230904122007__redgate.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U006_20230904122007__UNDO-redgate.sql",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.21.2",
+      "database": "WidgetProd",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-09-04T14:12:22.514033700",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Baseline",
+          "version": "001.20230703120714",
+          "rawVersion": "001_20230703120714",
+          "description": "baseline",
+          "type": "SQL_BASELINE",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\B001_20230703120714__baseline.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "002.20230703112421",
+          "rawVersion": "002_20230703112421",
+          "description": "Huxley Kendell",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V002_20230703112421__Huxley_Kendell.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U002_20230703112421__UNDO-Huxley_Kendell.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "003.20230712152932",
+          "rawVersion": "003_20230712152932",
+          "description": "NewProc-dbo-GetAllWidgets",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V003_20230712152932__NewProc-dbo-GetAllWidgets.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U003_20230712152932__UNDO-NewProc-dbo-GetAllWidgets.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "004.20230718170924",
+          "rawVersion": "004_20230718170924",
+          "description": "NewStatesTable",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V004_20230718170924__NewStatesTable.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U004_20230718170924__UNDO-NewStatesTable.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "005.20230801210409",
+          "rawVersion": "005_20230801210409",
+          "description": "stephanie herr",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V005_20230801210409__stephanie_herr.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U005_20230801210409__UNDO-stephanie_herr.sql",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "006.20230904122007",
+          "rawVersion": "006_20230904122007",
+          "description": "redgate",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "Yes",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V006_20230904122007__redgate.sql",
+          "undoFilepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\U006_20230904122007__UNDO-redgate.sql",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.21.2",
+      "database": "WidgetProd",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-09-04T14:19:02.329123",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "001.20230703120714",
+      "targetSchemaVersion": "006.20230904122007",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "002.20230703112421",
+          "description": "Huxley Kendell",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V002_20230703112421__Huxley_Kendell.sql",
+          "executionTime": 11
+        },
+        {
+          "category": "Versioned",
+          "version": "003.20230712152932",
+          "description": "NewProc-dbo-GetAllWidgets",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V003_20230712152932__NewProc-dbo-GetAllWidgets.sql",
+          "executionTime": 12
+        },
+        {
+          "category": "Versioned",
+          "version": "004.20230718170924",
+          "description": "NewStatesTable",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V004_20230718170924__NewStatesTable.sql",
+          "executionTime": 13
+        },
+        {
+          "category": "Versioned",
+          "version": "005.20230801210409",
+          "description": "stephanie herr",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V005_20230801210409__stephanie_herr.sql",
+          "executionTime": 15
+        },
+        {
+          "category": "Versioned",
+          "version": "006.20230904122007",
+          "description": "redgate",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\V006_20230904122007__redgate.sql",
+          "executionTime": 11
+        },
+        {
+          "category": "Repeatable",
+          "version": "",
+          "description": "CreateTable",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\R__CreateTable.sql",
+          "executionTime": 5
+        }
+      ],
+      "migrationsExecuted": 6,
+      "success": true,
+      "flywayVersion": "9.21.2",
+      "database": "WidgetProd",
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible."
+      ],
+      "timestamp": "2023-09-04T15:03:16.620171300",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "006.20230904122007",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Repeatable",
+          "version": "",
+          "description": "CreateTable",
+          "type": "SQL",
+          "filepath": "C:\\Users\\redgate\\Desktop\\Pagila\\AutoPilot\\migrations\\R__CreateTable.sql",
+          "executionTime": 20
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.21.2",
+      "database": "WidgetProd",
+      "warnings": [
+        "outOfOrder mode is active. Migration of schema [dbo] may not be reproducible."
+      ],
+      "timestamp": "2023-09-04T15:15:00.813413100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
