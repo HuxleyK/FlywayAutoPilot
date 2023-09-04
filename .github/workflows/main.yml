@@ -116,7 +116,31 @@ jobs:
           with: 
             name: flyway-reports
             path: ${{ GITHUB.WORKSPACE }}/report.html
+
+            
+  Test:
+    name: Deploy Test
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+    environment: 'test' #Ensure this environment name is setup in the projects Settings>Environment area. Ensuring any reviewers are also configured 
  
+    env:
+      stage: 'Test'
+      databaseName: "WidgetTest"
+      JDBC: "jdbc:sqlserver://localhost;databaseName=WidgetTest;encrypt=true;integratedSecurity=true;trustServerCertificate=true" 
+      
+      pauseForCodeReview: false
+ 
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+        
+      # Runs the Flyway Migrate against the Production database
+      - name: Migrate Test DB
+        if: ${{ true }}
+        run: |
+          flyway -user="${{ env.userName }}" -password="${{ env.password }}" "-plugins.clean.mode=default" -schemas="dbo" -baselineOnMigrate="true" -licenseKey="${{ env.FLYWAY_LICENSE_KEY }}" -locations="filesystem:${{ GITHUB.WORKSPACE }}\migrations" info migrate info -url="${{ env.JDBC }}" -cleanDisabled="false" -errorOverrides="S0001:0:I-"
  
   prod:
     name: Deploy Production
@@ -128,8 +152,7 @@ jobs:
     env:
       stage: 'Prod'
       databaseName: "WidgetProd"
-      JDBC: "jdbc:sqlserver://localhost;databaseName=WidgetProd;encrypt=true;integratedSecurity=true;trustServerCertificate=true" 
-      
+      JDBC: "jdbc:sqlserver://localhost;databaseName=WidgetProd;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
       pauseForCodeReview: true
  
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -141,4 +164,4 @@ jobs:
       - name: Migrate Production DB
         if: ${{ true }}
         run: |
-          flyway -user="${{ env.userName }}" -password="${{ env.password }}" "-plugins.clean.mode=default" -schemas="dbo" -baselineOnMigrate="true" -licenseKey="${{ env.FLYWAY_LICENSE_KEY }}" -locations="filesystem:${{ GITHUB.WORKSPACE }}\migrations" info migrate info -url="${{ env.JDBC }}" -cleanDisabled="false" -errorOverrides="S0001:0:I-"
+          flyway info migrate info -user="${{ env.userName }}" -password="${{ env.password }}" "-plugins.clean.mode=default" -schemas="dbo" -baselineOnMigrate="true" -licenseKey="${{ env.FLYWAY_LICENSE_KEY }}" -locations="filesystem:${{ GITHUB.WORKSPACE }}\migrations" -url="${{ env.JDBC }}" -cleanDisabled="false" -errorOverrides="S0001:0:I-"
